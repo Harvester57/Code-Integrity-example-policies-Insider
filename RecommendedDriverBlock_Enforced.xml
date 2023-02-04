@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>10.0.25260.0</VersionEx>
+  <VersionEx>10.0.25275.0</VersionEx>
   <PolicyTypeID>{D2BDA982-CCF6-4344-AC5B-0B44427B6816}</PolicyTypeID>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
@@ -199,6 +199,12 @@
     <Deny ID="ID_DENY_GLCKIO2_SHA256" FriendlyName="GLCKIO2.sys Hash Sha256" Hash="47DBA240967FD0088BE618163672DFBDDF0138178CCCD45B54037F622B221220" />
     <Deny ID="ID_DENY_GLCKIO2_SHA1_PAGE" FriendlyName="GLCKIO2.sys Hash Page Sha1" Hash="51E0740AAEE5AE76B0095C92908C97B817DB8BEA" />
     <Deny ID="ID_DENY_GLCKIO2_SHA256_PAGE" FriendlyName="GLCKIO2.sys Hash Page Sha256" Hash="E7F011E9857C7DB5AACBD424612CD7E3D12C363FDC8F072DDFAF9E2E5C85F5F3" />
+	<Deny ID="ID_DENY_GMER_1" FriendlyName="gmer\4d922fcaf6f6c794218fd2db946a650fe96a6476ebeade84372b0c4defc730d6 Hash Sha1" Hash="483B2E96862C3384E7F8ECED28F83A040367D49B" />
+    <Deny ID="ID_DENY_GMER_2" FriendlyName="gmer\4d922fcaf6f6c794218fd2db946a650fe96a6476ebeade84372b0c4defc730d6 Hash Sha256" Hash="4D922FCAF6F6C794218FD2DB946A650FE96A6476EBEADE84372B0C4DEFC730D6" />
+    <Deny ID="ID_DENY_GMER_3" FriendlyName="gmer\611223d444872a2ccea59cfa775e29fa0b84e9dc24c24cffe1316691d48d9593 Hash Sha1" Hash="9771F476D64C1E269DC0FCE169C48881D3BD55B5" />
+    <Deny ID="ID_DENY_GMER_4" FriendlyName="gmer\611223d444872a2ccea59cfa775e29fa0b84e9dc24c24cffe1316691d48d9593 Hash Sha256" Hash="611223D444872A2CCEA59CFA775E29FA0B84E9DC24C24CFFE1316691D48D9593" />
+    <Deny ID="ID_DENY_GMER_5" FriendlyName="gmer\95707b3d009cd749a4352e59e4f1b1a4b291a02066bd45c3c338fa7591749914 Hash Sha1" Hash="788652354009D1DAD75660F5FC7ED583C898AB8E" />
+    <Deny ID="ID_DENY_GMER_6" FriendlyName="gmer\95707b3d009cd749a4352e59e4f1b1a4b291a02066bd45c3c338fa7591749914 Hash Sha256" Hash="95707B3D009CD749A4352E59E4F1B1A4B291A02066BD45C3C338FA7591749914" />
     <Deny ID="ID_DENY_GVCIDRV64_SHA1" FriendlyName="GVCIDrv64.sys Hash Sha1" Hash="4EAE38E9DC262EB7B6EDE4B3D3F4AD068933845E" />
     <Deny ID="ID_DENY_GVCIDRV64_SHA256" FriendlyName="GVCIDrv64.sys Hash Sha256" Hash="2FF09BB919A9909068166C30322C4E904BEFEBA5429E9A11D011297FB8A73C07" />
     <Deny ID="ID_DENY_GVCIDRV64_SHA1_PAGE" FriendlyName="GVCIDrv64.sys Hash Page Sha1" Hash="6980122AEF4E2D5D7A6DDDB6DA76A166C460E0A1" />
@@ -552,6 +558,8 @@
 	<Deny ID="ID_DENY_PHYDMACC_2" FriendlyName="phydmaccx64\f7b3112b9745b766c8359d25e315975d3159935a8ddb3e3035d21ed124a9013f Hash Sha256" Hash="743302AF4224D5F44489290C01391C03B928126D726B72E7602FE5760E6D9519"/>
 	<Deny ID="ID_DENY_PHYDMACC_3" FriendlyName="phydmaccx64\f7b3112b9745b766c8359d25e315975d3159935a8ddb3e3035d21ed124a9013f Hash Page Sha1" Hash="84B91B1AED8F83DE14323089148BE2577FDC826C"/>
 	<Deny ID="ID_DENY_PHYDMACC_4" FriendlyName="phydmaccx64\f7b3112b9745b766c8359d25e315975d3159935a8ddb3e3035d21ed124a9013f Hash Page Sha256" Hash="B8502DB6B8947E5D852102166D0BEF8252EA3431D582E968EF44C35E56609C91"/>
+	<Deny ID="ID_DENY_PHYDMACC_5" FriendlyName="PhyDMACCx86.sys\23787eb342fd38da73ce785023176f98304267c6f6fa8a50e718da096c7a7951 Hash Sha1" Hash="B4AF2981B9D94DF71083A1F0C2D68E0883AA1CD1" />
+    <Deny ID="ID_DENY_PHYDMACC_6" FriendlyName="PhyDMACCx86.sys\23787eb342fd38da73ce785023176f98304267c6f6fa8a50e718da096c7a7951 Hash Sha256" Hash="5D10285D802FA793C217933C907D82DB58977B865B3DAD3848C6ED2550022413" />
     <Deny ID="ID_DENY_PHYMEMX64_SHA1" FriendlyName="phymemx64 Hash Sha1" Hash="3C9F40AC72B0202CB40627FDEB7298079187193A" />
     <Deny ID="ID_DENY_PHYMEMX64_SHA256" FriendlyName="phymemx64 Hash Sha256" Hash="A6AE7364FD188C10D6B5A729A7FF58A3EB11E7FEB0D107D18F9133655C11FB66" />
     <Deny ID="ID_DENY_PHYMEMX64_SHA1_PAGE" FriendlyName="phymemx64 Hash Page Sha1" Hash="6E7D8ABF7F81A2433F27B052B3952EFC4B9CC0B1" />
@@ -748,6 +756,7 @@
 	<Deny ID="ID_DENY_DBK_32" FriendlyName="Cheat Engine Driver" FileName="dbk32.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_DBK_64" FriendlyName="Cheat Engine Driver" FileName="dbk64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
 	<Deny ID="ID_DENY_GDRV" FriendlyName="gdrv.sys" FileName="gdrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+	<Deny ID="ID_DENY_KLMD" FriendlyName="Kaspersky klmd.sys FileRule" FileName="klmd.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
 	<Deny ID="ID_DENY_PCHUNTER_1" FriendlyName="PCHunter Driver" FileName="PCHunter.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_PCHUNTER_2" FriendlyName="PCHunter Driver" FileName="安全专用" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_PHYMEMX_64" FriendlyName="Phymemx64 Memory Mapping Driver" FileName="phymemx64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
@@ -765,11 +774,15 @@
     <FileAttrib ID="ID_FILEATTRIB_NTIOLIB" FriendlyName="" FileName="NTIOLib.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_CPUZ_DRIVER" FriendlyName="" FileName="cpuz.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.4.3" />
     <FileAttrib ID="ID_FILEATTRIB_ELBY_DRIVER" FriendlyName="" FileName="ElbyCDIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.0.3.2" />
+	<FileAttrib ID="ID_FILEATTRIB_GMER" FriendlyName="GMEREK gmer64 FileAttribute" FileName="gmer64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_HPPORTIOX64" FriendlyName="HpPortIox64.sys" FileName="HpPortIox64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.2.0.9" />
 	<FileAttrib ID="ID_FILEATTRIB_HW" FriendlyName="hw_sys\4880f40f2e557cff38100620b9aa1a3a753cb693af16cd3d95841583edcb57a8 FileAttribute" FileName="HW.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="4.65535.65535.65535" />
+	<FileAttrib ID="ID_FILEATTRIB_HWINFO_1" FriendlyName="REALiX_HWiNFO32 FileAttribute" FileName="HWiNFO32.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="8.98.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_HWINFO_2" FriendlyName="REALiX_HWiNFO64A FileAttribute" FileName="HWiNFO64A.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="8.98.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_HWINFO_3" FriendlyName="REALiX_HWiNFO64I FileAttribute" FileName="HWiNFO64I.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="8.98.0.0" />
 	<FileAttrib ID="ID_FILEATTRIB_HWRWDRV" FriendlyName="HwRwDrv FileAttribute" FileName="HwRwDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
 	<FileAttrib ID="ID_FILEATTRIB_IOBITUNLOCKER" FriendlyName="IObitUnlocker FileAttribute" FileName="IObitUnlocker.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.3.0.0" />
-    <FileAttrib ID="ID_FILEATTRIB_IQVW64" FriendlyName="IQVW64.sys FileAttribute" FileName="iQVW64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.4.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_IQVW64" FriendlyName="IQVW64.sys FileAttribute" FileName="iQVW64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.4.0.21" />
     <FileAttrib ID="ID_FILEATTRIB_KEVP64" FriendlyName="kevp64.sys FileAttribute" FileName="kEvP64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_LHA" FriendlyName="LHA.sys FileAttribute" FileName="LHA.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_LIBNICM_DRIVER" FriendlyName="" FileName="libnicm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.11.0" />
@@ -934,6 +947,8 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_HWMIO64" />
 	  <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
 	  <FileAttribRef RuleID="ID_FILEATTRIB_HW" />
+	  <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_1" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_2" />
 	  <FileAttribRef RuleID="ID_FILEATTRIB_IOBITUNLOCKER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LHA" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LIBNICM_DRIVER" />
@@ -1289,6 +1304,56 @@
       <CertPublisher Value="AVAST Software s.r.o." />
       <FileAttribRef RuleID="ID_FILEATTRIB_AVGELAM" />
     </Signer>
+	<Signer ID="ID_SIGNER_GMEREK" Name="GlobalSign CodeSigning CA - G2">
+      <CertRoot Type="TBS" Value="589A7D4DF869395601BA7538A65AFAE8C4616385" />
+      <CertPublisher Value="GMEREK Systemy Komputerowe Przemyslaw Gmerek" />
+    </Signer>
+    <Signer ID="ID_SIGNER_GMER" Name="GlobalSign CodeSigning CA - G2">
+      <CertRoot Type="TBS" Value="589A7D4DF869395601BA7538A65AFAE8C4616385" />
+      <CertPublisher Value="GMEREK Systemy Komputerowe Przemyslaw Gmerek" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_GMER" />
+    </Signer>
+	<Signer ID="ID_SIGNER_HWINFO_1" Name="GlobalSign CodeSigning CA - G3">
+      <CertRoot Type="TBS" Value="F478F0E790D5C8EC6056A3AB2567404A991D2837" />
+      <CertPublisher Value="Zhengzhou Heng Kuai Information Technology Co., Ltd" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_1" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_2" />
+    </Signer>
+    <Signer ID="ID_SIGNER_HWINFO_2" Name="Certum Extended Validation Code Signing 2021 CA">
+      <CertRoot Type="TBS" Value="56F431D13FD6F7974905196A6367D252A955C5FE34DB1E48CFA3EB569707809D63DE4A0FF8FEF57BE69C23284D9144EA" />
+      <CertPublisher Value="Martin Malik - REALiX" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_3" />
+    </Signer>
+    <Signer ID="ID_SIGNER_HWINFO_3" Name="GlobalSign Primary Object Publishing CA">
+      <CertRoot Type="TBS" Value="879269F3F467A6D59641960A62FE9CB419355FF6" />
+      <CertPublisher Value="REALiX" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_1" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_3" />
+    </Signer>
+    <Signer ID="ID_SIGNER_HWINFO_4" Name="DigiCert EV Code Signing CA (SHA2)">
+      <CertRoot Type="TBS" Value="EEC58131DC11CD7F512501B15FDBC6074C603B68CA91F7162D5A042054EDB0CF" />
+      <CertPublisher Value="Martin Malik - REALiX" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_1" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_2" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_3" />
+    </Signer>
+    <Signer ID="ID_SIGNER_HWINFO_5" Name="GlobalSign CodeSigning CA - SHA256 - G3">
+      <CertRoot Type="TBS" Value="06936BAC8D2F85D9CE6F7348EA421A1A949219182845192667B0E671FE0E4285" />
+      <CertPublisher Value="Zhengzhou Heng Kuai Information Technology Co., Ltd" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_1" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_2" />
+    </Signer>
+    <Signer ID="ID_SIGNER_HWINFO_6" Name="GlobalSign CodeSigning CA - G2">
+      <CertRoot Type="TBS" Value="589A7D4DF869395601BA7538A65AFAE8C4616385" />
+      <CertPublisher Value="Martin Malik - REALiX" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_1" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_2" />
+    </Signer>
+	<Signer ID="ID_SIGNER_ASROCK_RWDRV" Name="VeriSign Class 3 Code Signing 2004 CA">
+      <CertRoot Type="TBS" Value="C7FC1727F5B75A6421A1F95C73BBDB23580C48E5" />
+      <CertPublisher Value="ASROCK Incorporation" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RWDRV_DRIVER" />
+    </Signer>
 	<Signer ID="ID_SIGNER_BAOJI" Name="VeriSign Class 3 Code Signing 2010 CA - Baoji zhihengtaiye co.,ltd">
       <CertRoot Type="TBS" Value="ED37AD43BC52426943019F77F35ED1A6B063B5B7" />
     </Signer>
@@ -1325,6 +1390,12 @@
 	<Signer ID="ID_SIGNER_SAASAME" Name="SaaSaMe Ltd.">
       <CertRoot Type="TBS" Value="A86DE66D8198E4272859881476A6F9936034A482" />
     </Signer>
+	<Signer ID="ID_SIGNER_JCOS_1" Name="JCOS Media srvnetbus">
+      <CertRoot Type="TBS" Value="06530FA1FA2D0954A87C4AA1891699E7C81AB2CA" />
+    </Signer>
+    <Signer ID="ID_SIGNER_JCOS_2" Name="JCOS Media pshedmp">
+      <CertRoot Type="TBS" Value="8A3994CC7AA70F5480166A96A32EB10BAB0A7A36" />
+    </Signer>
   </Signers>
   <!--Driver Signing Scenarios-->
   <SigningScenarios>
@@ -1337,6 +1408,7 @@
 		  <DeniedSigner SignerId="ID_SIGNER_AGNITUM_2010_1" />
           <DeniedSigner SignerId="ID_SIGNER_AMDPP" />
 		  <DeniedSigner SignerId="ID_SIGNER_ATILLK" />
+		  <DeniedSigner SignerId="ID_SIGNER_ASROCK_RWDRV" />
 		  <DeniedSigner SignerId="ID_SIGNER_ASWARPOT_1" />
           <DeniedSigner SignerId="ID_SIGNER_ASWARPOT_2" />
           <DeniedSigner SignerId="ID_SIGNER_ASWARPOT_3" />
@@ -1355,13 +1427,15 @@
           <DeniedSigner SignerId="ID_SIGNER_ENE" />
           <DeniedSigner SignerId="ID_SIGNER_DIGICERT_EV" />
           <DeniedSigner SignerId="ID_SIGNER_GEOTRUST_SRL_2009" />
+		  <DeniedSigner SignerId="ID_SIGNER_GEOTRUST_SRL_2010" />
           <DeniedSigner SignerId="ID_SIGNER_GETAC" />
           <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_CHEAT_ENGINE" />
           <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_G2_CHEAT_ENGINE" />
           <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_G2_MICROSTAR" />
           <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_MICROSTAR" />
-          <DeniedSigner SignerId="ID_SIGNER_GEOTRUST_SRL_2010" />
           <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_TG_SOFT" />
+		  <DeniedSigner SignerId="ID_SIGNER_GMER" />
+		  <DeniedSigner SignerId="ID_SIGNER_GMEREK" />
 		  <DeniedSigner SignerId="ID_SIGNER_GOOD_WEI" />
           <DeniedSigner SignerId="ID_SIGNER_HANDAN" />
 		  <DeniedSigner SignerId="ID_SIGNER_HYPERTECH" />
@@ -1370,9 +1444,17 @@
           <DeniedSigner SignerId="ID_SIGNER_HW_B" />
           <DeniedSigner SignerId="ID_SIGNER_HW_C" />
           <DeniedSigner SignerId="ID_SIGNER_HW_D" />
+		  <DeniedSigner SignerId="ID_SIGNER_HWINFO_1" />
+          <DeniedSigner SignerId="ID_SIGNER_HWINFO_2" />
+          <DeniedSigner SignerId="ID_SIGNER_HWINFO_3" />
+          <DeniedSigner SignerId="ID_SIGNER_HWINFO_4" />
+          <DeniedSigner SignerId="ID_SIGNER_HWINFO_5" />
+          <DeniedSigner SignerId="ID_SIGNER_HWINFO_6" />
 		  <DeniedSigner SignerId="ID_SIGNER_HWRWDRV_1" />
 		  <DeniedSigner SignerId="ID_SIGNER_HWRWDRV_2" />		  
           <DeniedSigner SignerId="ID_SIGNER_INTEL_IQVW" />
+		  <DeniedSigner SignerId="ID_SIGNER_JCOS_1" />
+		  <DeniedSigner SignerId="ID_SIGNER_JCOS_2" />
           <DeniedSigner SignerId="ID_SIGNER_JEROMIN_CODY_ERIC" />
 		  <DeniedSigner SignerId="ID_SIGNER_LV_DIAG" />	
 		  <DeniedSigner SignerId="ID_SIGNER_LV_DIAG_2" />	
@@ -1560,6 +1642,12 @@
           <FileRuleRef RuleID="ID_DENY_GLCKIO2_SHA256" />
           <FileRuleRef RuleID="ID_DENY_GLCKIO2_SHA1_PAGE" />
           <FileRuleRef RuleID="ID_DENY_GLCKIO2_SHA256_PAGE" />
+		  <FileRuleRef RuleID="ID_DENY_GMER_1" />
+          <FileRuleRef RuleID="ID_DENY_GMER_2" />
+          <FileRuleRef RuleID="ID_DENY_GMER_3" />
+          <FileRuleRef RuleID="ID_DENY_GMER_4" />
+          <FileRuleRef RuleID="ID_DENY_GMER_5" />
+          <FileRuleRef RuleID="ID_DENY_GMER_6" />
           <FileRuleRef RuleID="ID_DENY_GVCIDRV64_SHA1" />
           <FileRuleRef RuleID="ID_DENY_GVCIDRV64_SHA256" />
           <FileRuleRef RuleID="ID_DENY_GVCIDRV64_SHA1_PAGE" />
@@ -1707,6 +1795,7 @@
 		  <FileRuleRef RuleID="ID_DENY_INPOUTX_21" />
 		  <FileRuleRef RuleID="ID_DENY_INPOUTX_22" />
 		  <FileRuleRef RuleID="ID_DENY_INPOUTX_23" />
+		  <FileRuleRef RuleID="ID_DENY_KLMD" />
 		  <FileRuleRef RuleID="ID_DENY_LGCORETEMP_1" />
 		  <FileRuleRef RuleID="ID_DENY_LGCORETEMP_2" />
 		  <FileRuleRef RuleID="ID_DENY_LGCORETEMP_3" />
@@ -1913,6 +2002,8 @@
 		  <FileRuleRef RuleID="ID_DENY_PHYDMACC_2" />
 		  <FileRuleRef RuleID="ID_DENY_PHYDMACC_3" />
 		  <FileRuleRef RuleID="ID_DENY_PHYDMACC_4" />
+		  <FileRuleRef RuleID="ID_DENY_PHYDMACC_5" />
+		  <FileRuleRef RuleID="ID_DENY_PHYDMACC_6" />
           <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA1" />
           <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA256" />
           <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA1_PAGE" />
@@ -2132,7 +2223,7 @@
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.25260.0</String>
+        <String>10.0.25275.0</String>
       </Value>
     </Setting>
     <Setting Provider="PolicyInfo" Key="NoRevalidationUponRefresh" ValueName="NoRevalidationUponRefreshValue">
