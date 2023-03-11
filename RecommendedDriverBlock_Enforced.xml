@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>10.0.25275.0</VersionEx>
+  <VersionEx>10.0.25290.0</VersionEx>
   <PolicyTypeID>{D2BDA982-CCF6-4344-AC5B-0B44427B6816}</PolicyTypeID>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
@@ -771,8 +771,10 @@
     <FileAttrib ID="ID_FILEATTRIB_BS_I2CIO" FriendlyName="" FileName="BS_I2cIo.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.1.0.0" />
 	<FileAttrib ID="ID_FILEATTRIB_BS_DEF" FriendlyName="Bs_Def64 FileAttribute" FileName="Bs_Def64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_BS_DEF_64" FriendlyName="Bs_Def FileAttribute" FileName="Bs_Def.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+	<FileAttrib ID="ID_FILEATTRIB_BS_MEM" FriendlyName="BSMEM64_W10 FileAttribute" FileName="BSMEM64_W10.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.1806.2201" />
     <FileAttrib ID="ID_FILEATTRIB_NTIOLIB" FriendlyName="" FileName="NTIOLib.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_CPUZ_DRIVER" FriendlyName="" FileName="cpuz.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.4.3" />
+	<FileAttrib ID="ID_FILEATTRIB_DRIVER7" FriendlyName="Asus driver7.sys\1beb15c90dcf7a5234ed077833a0a3e900969b60be1d04fcebce0a9f8994bdbb FileAttribute" FileName="Driver7" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_ELBY_DRIVER" FriendlyName="" FileName="ElbyCDIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.0.3.2" />
 	<FileAttrib ID="ID_FILEATTRIB_GMER" FriendlyName="GMEREK gmer64 FileAttribute" FileName="gmer64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_HPPORTIOX64" FriendlyName="HpPortIox64.sys" FileName="HpPortIox64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.2.0.9" />
@@ -806,6 +808,7 @@
     <FileAttrib ID="ID_FILEATTRIB_RTKIOW8X64_DRIVER" FriendlyName="" FileName="rtkiow8x64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" FriendlyName="" FileName="rtkiow10x64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_RWDRV_DRIVER" FriendlyName="" FileName="RwDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+	<FileAttrib ID="ID_FILEATTRIB_RZPNK" FriendlyName="Razer rzpnk.sys FileAttribute" FileName="Rzpnk.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
 	<FileAttrib ID="ID_FILEATTRIB_SANDBOX_1" FriendlyName="Agnitum sandbox FileAttribute" FileName="sandbox.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_SANDBOX_2" FriendlyName="Agnitum SandBox FileAttribute" FileName="SandBox.sys"  MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_SANDRA" FriendlyName="" FileName="SANDRA" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
@@ -827,6 +830,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ATSZIO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
+	  <FileAttribRef RuleID="ID_FILEATTRIB_DRIVER7" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_KEVP64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LHA" />
@@ -836,6 +840,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO64_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RWDRV_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RZPNK" />
     </Signer>
     <Signer ID="ID_SIGNER_VERISIGN_2010_2" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4678C6E4A8787A8E6ED2BCE8792B122F6C08AFD8" />
@@ -853,6 +858,10 @@
       <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
       <CertOemID Value="ENE Technology Inc." />
     </Signer>
+	<Signer ID="ID_SIGNER_MB_RB_HACKS" Name="Microsoft Windows Third Party Component CA 2014 ENE Tech OPUS">
+      <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
+      <CertOemID Value="MB Rb online" />
+    </Signer>
     <Signer ID="ID_SIGNER_DIGICERT_EV" Name="DigiCert EV Code Signing CA (SHA2)">
       <CertRoot Type="TBS" Value="EEC58131DC11CD7F512501B15FDBC6074C603B68CA91F7162D5A042054EDB0CF" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
@@ -869,6 +878,7 @@
     <Signer ID="ID_SIGNER_VERISIGN_2009" Name="VeriSign Class 3 Code Signing 2009-2 CA">
       <CertRoot Type="TBS" Value="4CDC38C800761463749C3CBD94A12F32E49877BF" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ATSZIO" />
+	  <FileAttribRef RuleID="ID_FILEATTRIB_DRIVER7" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LIBNICM_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NICM_DRIVER" />
@@ -945,6 +955,7 @@
       <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
       <CertPublisher Value="Microsoft Windows Hardware Compatibility Publisher" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_HWMIO64" />
+	  <FileAttribRef RuleID="ID_FILEATTRIB_BS_MEM" />  
 	  <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
 	  <FileAttribRef RuleID="ID_FILEATTRIB_HW" />
 	  <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_1" />
@@ -958,6 +969,7 @@
 	  <FileAttribRef RuleID="ID_FILEATTRIB_NVFLASH" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RZPNK" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VIRAGT" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VIRAGT64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VMDRV" />
@@ -979,6 +991,7 @@
       <CertRoot Type="TBS" Value="C7FC1727F5B75A6421A1F95C73BBDB23580C48E5" />
       <CertPublisher Value="BIOSTAR MICROTECH INT'L CORP" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_I2CIO" />
+	  <FileAttribRef RuleID="ID_FILEATTRIB_BS_MEM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BSMI" />
     </Signer>
 	  <Signer ID="ID_SIGNER_VERISIGN_2004_ASUS_BS_DEF" Name="VeriSign Class 3 Code Signing 2004 CA">
@@ -990,13 +1003,15 @@
     <Signer ID="ID_SIGNER_VERISIGN_2009_BIOSTAR" Name="VeriSign Class 3 Code Signing 2009-2 CA">
       <CertRoot Type="TBS" Value="4CDC38C800761463749C3CBD94A12F32E49877BF" />
       <CertPublisher Value="BIOSTAR MICROTECH INT'L CORP" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_BSMI" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_BS_MEM" />
+	  <FileAttribRef RuleID="ID_FILEATTRIB_BSMI" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_I2CIO" />
     </Signer>
     <Signer ID="ID_SIGNER_VERISIGN_2010_BIOSTAR" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
       <CertPublisher Value="BIOSTAR MICROTECH INT'L CORP" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_I2CIO" />
+	  <FileAttribRef RuleID="ID_FILEATTRIB_BS_MEM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BSMI" />
     </Signer>
     <Signer ID="ID_SIGNER_GLOBALSIGN_G2_MICROSTAR" Name="GlobalSign CodeSigning CA - G2">
@@ -1030,6 +1045,7 @@
       <CertRoot Type="TBS" Value="A08E79C386083D875014C409C13D144E0A24386132980DF11FF59737C8489EB1" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMD_RYZEN" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RZPNK" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
     </Signer>
     <Signer ID="ID_SIGNER_VERISIGN_AMD" Name="VeriSign Class 3 Code Signing 2010 CA">
@@ -1369,6 +1385,9 @@
     <Signer ID="ID_SIGNER_GEOTRUST_SRL_2010" Name="HT Srl Digital ID Class 3 - Microsoft Software Validation v2">
       <CertRoot Type="TBS" Value="E5BA2ABBD1DC89F143A66A3CDCDA26D968758E2D" />
     </Signer>
+	<Signer ID="ID_SIGNER_GLOBAL_SOFT" Name="Symantec Class 3 SHA256 Code Signing CA - Global Software, LLC">
+      <CertRoot Type="TBS" Value="A79C023D3452B2F27E7BC36D2588C28564B2ABABBF78AFAC844152B8DD3A89D4" />
+    </Signer>
 	<Signer ID="ID_SIGNER_GOOD_WEI" Name="thawte SHA256 Code Signing CA - 善君 韦">
       <CertRoot Type="TBS" Value="8438D529DC1D87E288CE3C8830A782BB167E20A6E1FD37624D5DF21340FF6B25" />
     </Signer>
@@ -1429,6 +1448,7 @@
           <DeniedSigner SignerId="ID_SIGNER_GEOTRUST_SRL_2009" />
 		  <DeniedSigner SignerId="ID_SIGNER_GEOTRUST_SRL_2010" />
           <DeniedSigner SignerId="ID_SIGNER_GETAC" />
+		  <DeniedSigner SignerId="ID_SIGNER_GLOBAL_SOFT" />
           <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_CHEAT_ENGINE" />
           <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_G2_CHEAT_ENGINE" />
           <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_G2_MICROSTAR" />
@@ -1456,9 +1476,10 @@
 		  <DeniedSigner SignerId="ID_SIGNER_JCOS_1" />
 		  <DeniedSigner SignerId="ID_SIGNER_JCOS_2" />
           <DeniedSigner SignerId="ID_SIGNER_JEROMIN_CODY_ERIC" />
-		  <DeniedSigner SignerId="ID_SIGNER_LV_DIAG" />	
-		  <DeniedSigner SignerId="ID_SIGNER_LV_DIAG_2" />	
-		  <DeniedSigner SignerId="ID_SIGNER_LV_LOGITECH" />		  
+		  <DeniedSigner SignerId="ID_SIGNER_LV_DIAG" />
+		  <DeniedSigner SignerId="ID_SIGNER_LV_DIAG_2" />
+		  <DeniedSigner SignerId="ID_SIGNER_LV_LOGITECH" />
+		  <DeniedSigner SignerId="ID_SIGNER_MB_RB_HACKS" />
           <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_KERNEL" />
           <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_KERNEL_SHA2" />
           <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_USER" />
@@ -2223,7 +2244,7 @@
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.25275.0</String>
+        <String>10.0.25290.0</String>
       </Value>
     </Setting>
     <Setting Provider="PolicyInfo" Key="NoRevalidationUponRefresh" ValueName="NoRevalidationUponRefreshValue">
