@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>10.0.27695.0</VersionEx>
+  <VersionEx>10.0.27720.0</VersionEx>
   <PolicyTypeID>{D2BDA982-CCF6-4344-AC5B-0B44427B6816}</PolicyTypeID>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
@@ -285,6 +285,26 @@
     <Deny ID="ID_DENY_ASIO_4" FriendlyName="asio\2da330a2088409efc351118445a824f11edbe51cf3d653b298053785097fe40e Hash Page Sha256" Hash="EA9A321D58DD45D747C41AD6F0C30B3B11F134755CE3E69DC3DC34257E420493" />
     <Deny ID="ID_DENY_ASIO_5" FriendlyName="asio\923ebbe8111e73d5b8ecc2db10f8ea2629a3264c3a535d01c3c118a3b4c91782 Hash Sha1" Hash="E471BA6D1327D1026EB2C6A905E2BAD3952DABBD" />
     <Deny ID="ID_DENY_ASIO_6" FriendlyName="asio\923ebbe8111e73d5b8ecc2db10f8ea2629a3264c3a535d01c3c118a3b4c91782 Hash Sha256" Hash="ED302EA33FEB557B879F64C4B7835947A9CA31054573E1487F5BBC38449753FF" />
+    <Deny ID="ID_DENY_ASIO3_1" FriendlyName="asio3\03a1e1037ea162020e75e37be771f620c4569e9621175f672583705f3ab569f7 Hash Sha1" Hash="2608305C0A9463ED5E5D912D34C43F241385E70D"/>
+    <Deny ID="ID_DENY_ASIO3_2" FriendlyName="asio3\03a1e1037ea162020e75e37be771f620c4569e9621175f672583705f3ab569f7 Hash Sha256" Hash="24E18FE4F1463AD908EBDD42772580AACB6986B7539F6646B7046FEF16DD7B9F"/>
+    <Deny ID="ID_DENY_ASIO3_3" FriendlyName="asio3\1ed43e18f78413774c83660106154be8bfb5f2f9809d9b369a4211365a1685c1 Hash Sha1" Hash="E6E90EE0E3369A2A707229A3B4701D395DED8069"/>
+    <Deny ID="ID_DENY_ASIO3_4" FriendlyName="asio3\1ed43e18f78413774c83660106154be8bfb5f2f9809d9b369a4211365a1685c1 Hash Sha256" Hash="8E48E8439C99FBF2C90869AE32F95E4FB02D7DEC8AE24D76B2FBFFCA18E1DF91"/>
+    <Deny ID="ID_DENY_ASIO3_5" FriendlyName="asio3\218de0c801b70d8bebf0233f796de07842b84b899c49f7a7be1c0423a158b786 Hash Sha1" Hash="B18B97D10F3C0547606AD699C6BD4929B328471C"/>
+    <Deny ID="ID_DENY_ASIO3_6" FriendlyName="asio3\218de0c801b70d8bebf0233f796de07842b84b899c49f7a7be1c0423a158b786 Hash Sha256" Hash="953EE8E1D30689F71C5B849FD2C201154FA6374A927977E600F1116AF984D87F"/> 
+    <Deny ID="ID_DENY_ASIO3_7" FriendlyName="asio3\383df3b803ea69e16de314c82c2099283e746a6865cc4488ac927510ab5ada9c Hash Sha1" Hash="8F518B3501FAF58D42875B5A00EB1A62FA6BA0E9"/>
+    <Deny ID="ID_DENY_ASIO3_8" FriendlyName="asio3\383df3b803ea69e16de314c82c2099283e746a6865cc4488ac927510ab5ada9c Hash Sha256" Hash="AD0370586555FFC34B633AEA8B5E4F42E85A4FF6051982362FF371E3972B23EF"/>
+    <Deny ID="ID_DENY_ASIO3_9" FriendlyName="asio3\4d71d5e711ced1d8b215aeee8238b12908000e3d5c0d7c30927219fdb4098ab1 Hash Sha1" Hash="1438E55795528185A974454257C342D510DBC5BA"/>
+    <Deny ID="ID_DENY_ASIO3_10" FriendlyName="asio3\4d71d5e711ced1d8b215aeee8238b12908000e3d5c0d7c30927219fdb4098ab1 Hash Sha256" Hash="5A68DB1B698F5084081D76C9E5DBC5BA6B7F3E51D8F69F8E323FEFC437D64BA4"/>
+    <Deny ID="ID_DENY_ASIO3_11" FriendlyName="asio3\69dc4782060178762305b17c353efc1508a2a6edd9baf124286f380f51f5daed Hash Sha1" Hash="5ACB42939E09D6B34911BE49CFCD09D6916E5650"/>
+    <Deny ID="ID_DENY_ASIO3_12" FriendlyName="asio3\69dc4782060178762305b17c353efc1508a2a6edd9baf124286f380f51f5daed Hash Sha256" Hash="24AF16A81CC820F3C44EFC1733754205FAFFD637899B706F423500DED5F2BFC7"/>
+    <Deny ID="ID_DENY_ASIO3_13" FriendlyName="asio3\82ada50f0001fdc2b5eae4e6343582d443343400442669f73bb660bb24db1e12 Hash Sha1" Hash="5273941AAC7670DA1855B5E51378C99113FD1391"/>
+    <Deny ID="ID_DENY_ASIO3_14" FriendlyName="asio3\82ada50f0001fdc2b5eae4e6343582d443343400442669f73bb660bb24db1e12 Hash Sha256" Hash="023DE4F3F57D627F1CF49BF4499263E394979FD4BB0F500E6B236A9AACEF86AF"/>
+    <Deny ID="ID_DENY_ASIO3_15" FriendlyName="asio3\cc442919294d81400674bb9e1b68ce8f9e5aafed7f45d548862ce167d487d59f Hash Sha1" Hash="667E808D66A9CAF9D4D57688A2F5EED85EA1DC3B"/>
+    <Deny ID="ID_DENY_ASIO3_16" FriendlyName="asio3\cc442919294d81400674bb9e1b68ce8f9e5aafed7f45d548862ce167d487d59f Hash Sha256" Hash="0CAB01269E7F3AF351ADD0AC19CA9CC781DA658CBF078499CCC3E699F8EAC5DD"/>
+    <Deny ID="ID_DENY_ASIO3_17" FriendlyName="asio3\cc58e64e2a9b77eebf466229df4c3c1f5305d6c69e50c6dd140661490ce70f1f Hash Sha1" Hash="AC07C5670916F6C3949A49036460AC08EC43A582"/>
+    <Deny ID="ID_DENY_ASIO3_18" FriendlyName="asio3\cc58e64e2a9b77eebf466229df4c3c1f5305d6c69e50c6dd140661490ce70f1f Hash Sha256" Hash="54231728C29F2D2003EC575729760369BB72BE7B656B52B4F02EC198F4EE4DFD"/>
+    <Deny ID="ID_DENY_ASIO3_19" FriendlyName="asio3\fa875178ae2d7604d027510b0d0a7e2d9d675e10a4c9dda2d927ee891e0bcb91 Hash Sha1" Hash="B6F1E92A8452C2AEC22AAA7657E92D2AA48B3055"/>
+    <Deny ID="ID_DENY_ASIO3_20" FriendlyName="asio3\fa875178ae2d7604d027510b0d0a7e2d9d675e10a4c9dda2d927ee891e0bcb91 Hash Sha256" Hash="26B8E689A13D3434951559CFF24FCFE55EDEB7B78C7CC16DB1A273C90AA694C1"/>
     <Deny ID="ID_DENY_ASUPIO64_SHA1" FriendlyName="AsUpIO64.sys Hash Sha1" Hash="2A95F882DD9BAFCC57F144A2708A7EC67DD7844C" />
     <Deny ID="ID_DENY_ASUPIO64_SHA256" FriendlyName="AsUpIO64.sys Hash Sha256" Hash="7F75D91844B0C162EEB24D14BCF63B7F230E111DAA7B0A26EAA489EEB22D9057" />
     <Deny ID="ID_DENY_ASUPIO64_SHA1_PAGE" FriendlyName="AsUpIO64.sys Hash Page Sha1" Hash="316E7872A227F0EAD483D244805E9FF4D3569F6F" />
@@ -1476,6 +1496,28 @@
     <Deny ID="ID_DENY_TDEIO_6" FriendlyName="Tdeio.sys\aa282c3b989a0eca78023347b7b1e1feef7e42edf9fd2bef5d55c66000c99911 Hash Sha256" Hash="EE06212E22AE7E892F09AE75CB39587237F5A115BF3CE4AE7493A8E82C180CAE"/>
     <Deny ID="ID_DENY_TDEIO_7" FriendlyName="Tdeio.sys\aa282c3b989a0eca78023347b7b1e1feef7e42edf9fd2bef5d55c66000c99911 Hash Page Sha1" Hash="6F4018933D98EFEF97CC2EA9EA55018B9497592D"/>
     <Deny ID="ID_DENY_TDEIO_8" FriendlyName="Tdeio.sys\aa282c3b989a0eca78023347b7b1e1feef7e42edf9fd2bef5d55c66000c99911 Hash Page Sha256" Hash="5379AD6B8A4B6669DEFD907B9D1D2030F31D9F00559F32935629765A75F6B601"/>
+    <Deny ID="ID_DENY_TDKLIB_1" FriendlyName="tdklib.sys\03920ed3f904838b65c2065a338f08ce062c40247539345ea8f4c158efe66634 Hash Sha1" Hash="5118D2764E80218C7FE07A47644EAB0D3F148A08"/>
+    <Deny ID="ID_DENY_TDKLIB_2" FriendlyName="tdklib.sys\03920ed3f904838b65c2065a338f08ce062c40247539345ea8f4c158efe66634 Hash Sha256" Hash="9B133D1ECF6D09C5F4957E8BCF7CDBE025C05DD46C6A505AF2F9B35C5E87E9E1"/>
+    <Deny ID="ID_DENY_TDKLIB_3" FriendlyName="tdklib.sys\2695390a8a7448390fe383beb1eee06d582202683f0273d6e72ef39a8cf709e1 Hash Sha1" Hash="4A6AFD367EAEA9DADCF0EB27D8C074D56D5CDD26"/>
+    <Deny ID="ID_DENY_TDKLIB_4" FriendlyName="tdklib.sys\2695390a8a7448390fe383beb1eee06d582202683f0273d6e72ef39a8cf709e1 Hash Sha256" Hash="BCF811040C7552A2C93409A6CD2D63F8ABBAE121ACCA012E0B7F4FDC0B6A6B8B"/>
+    <Deny ID="ID_DENY_TDKLIB_5" FriendlyName="tdklib.sys\44a0537e95ebd2d6851f64fab72a41b2f95b5d93729b8978c20350f038ddb8f7 Hash Sha1" Hash="AB9695B3ECF873D4D3CB63ED9FC67410DF037B48"/>
+    <Deny ID="ID_DENY_TDKLIB_6" FriendlyName="tdklib.sys\44a0537e95ebd2d6851f64fab72a41b2f95b5d93729b8978c20350f038ddb8f7 Hash Sha256" Hash="5A84DCEF471A265C712CC488AAC278CBBFB29F9188DB9A9335C2E870AFB7C123"/>
+    <Deny ID="ID_DENY_TDKLIB_7" FriendlyName="tdklib.sys\45a74b2e7ab35dc783375a4603efd961f6dfefaf3c134d453d6b76af94607e74 Hash Sha1" Hash="503E66D1B93BC25A615F6C7BC882DC7A4EDFF9B0"/>
+    <Deny ID="ID_DENY_TDKLIB_8" FriendlyName="tdklib.sys\45a74b2e7ab35dc783375a4603efd961f6dfefaf3c134d453d6b76af94607e74 Hash Sha256" Hash="D5D3E6F48713A054C86313D58F7AD2F00A72AB3C21D4F77B36EB95D61C8B1432"/>
+    <Deny ID="ID_DENY_TDKLIB_9" FriendlyName="tdklib.sys\4c807bacfcf5c30686e26812ec8d5581a824b82fee7434260c27c33eee2dfbe2 Hash Sha1" Hash="6BD9A4CEB35BDF8CF449D85B9C1424DEC1482638"/>
+    <Deny ID="ID_DENY_TDKLIB_10" FriendlyName="tdklib.sys\4c807bacfcf5c30686e26812ec8d5581a824b82fee7434260c27c33eee2dfbe2 Hash Sha256" Hash="8866F6E762DD7DEA58C9E9486DA53D716F3AE61048A8A10F8033B60FB5028914"/>
+    <Deny ID="ID_DENY_TDKLIB_11" FriendlyName="tdklib.sys\506f56996fbcd34ff8a27e6948a2e2e21e6dbf42dab6e3a6438402000b969fd1 Hash Sha1" Hash="F682AEABAF6797E57D971EB3CCA5FD16F7B75AC0"/>
+    <Deny ID="ID_DENY_TDKLIB_12" FriendlyName="tdklib.sys\506f56996fbcd34ff8a27e6948a2e2e21e6dbf42dab6e3a6438402000b969fd1 Hash Sha256" Hash="5DC477CC45E4C1421296373ADEF9F5795FB9F5035F1400C72BB37678AD7F8954"/>
+    <Deny ID="ID_DENY_TDKLIB_13" FriendlyName="tdklib.sys\5fbfd7c4ea3db1197ad38d5a945acf6f2f42cb350380cf8ae276bc80b0dedb77 Hash Sha1" Hash="1767ADE8AC3E931082B02F04B5D2E004E6F9C10B"/>
+    <Deny ID="ID_DENY_TDKLIB_14" FriendlyName="tdklib.sys\5fbfd7c4ea3db1197ad38d5a945acf6f2f42cb350380cf8ae276bc80b0dedb77 Hash Sha256" Hash="CD57ABAF2F20EA5B3F56DB1193CB3772AA09BB2BE3C4FA8001E7CF72AE1F078C"/>
+    <Deny ID="ID_DENY_TDKLIB_15" FriendlyName="tdklib.sys\784be598d13257a77da904052260f475d115d45aad3be28e44af2b16b19a840b Hash Sha1" Hash="3FA52B5E77DF976680A052EBCA540E05A7235A9B"/>
+    <Deny ID="ID_DENY_TDKLIB_16" FriendlyName="tdklib.sys\784be598d13257a77da904052260f475d115d45aad3be28e44af2b16b19a840b Hash Sha256" Hash="CF370BF2EF3FB6FD5E9722BAD8AF5347B74CE7252D291E2958B365AAD1B0BB76"/>
+    <Deny ID="ID_DENY_TDKLIB_17" FriendlyName="tdklib.sys\a0dba310dc9e89b468523663545e0c3cc82f545d12ddaab234f8903e58ff359a Hash Sha1" Hash="2319BBD2839D7847D8E74F402A03689A464ABB93"/>
+    <Deny ID="ID_DENY_TDKLIB_18" FriendlyName="tdklib.sys\a0dba310dc9e89b468523663545e0c3cc82f545d12ddaab234f8903e58ff359a Hash Sha256" Hash="E6DC9D5DC37A0880F112496AE9961AD618B94B32078314C021BFF87BE5587368"/>
+    <Deny ID="ID_DENY_TDKLIB_19" FriendlyName="tdklib.sys\dd0bd7b8fae8e8835ba09118a02a06a51e111fccbe16916414844aab91cfeed4 Hash Sha1" Hash="D2660A9EC25CBDC57AEA05CF0DB52DC002387243"/>
+    <Deny ID="ID_DENY_TDKLIB_20" FriendlyName="tdklib.sys\dd0bd7b8fae8e8835ba09118a02a06a51e111fccbe16916414844aab91cfeed4 Hash Sha256" Hash="E3A74AC9D23EFAA857333A4D8A40ED0026F28575475DEEB6EB301FCC0DB34EFC"/>
+    <Deny ID="ID_DENY_TDKLIB_21" FriendlyName="tdklib.sys\e34afe0a8c5459d13e7a11f20d62c7762b2a55613aaf6dbeb887e014b5f19295 Hash Sha1" Hash="A191E684C3D55DB3A913953370662517E5C78557"/>
+    <Deny ID="ID_DENY_TDKLIB_22" FriendlyName="tdklib.sys\e34afe0a8c5459d13e7a11f20d62c7762b2a55613aaf6dbeb887e014b5f19295 Hash Sha256" Hash="E2DECC56788D257CE7F6B1915C90EA5A54FB5232F2BF9F311958DE495A4EB308"/>
     <Deny ID="ID_DENY_WFSHBR_1" FriendlyName="HyperTech wfshbr64\89698cad598a56f9e45efffd15d1841e494a2409cc12279150a03842cd6bb7f3 Hash Sha1" Hash="0122F7A57784F2AC460D175687450D8940CACE6E"/>
     <Deny ID="ID_DENY_WFSHBR_2" FriendlyName="HyperTech wfshbr64\89698cad598a56f9e45efffd15d1841e494a2409cc12279150a03842cd6bb7f3 Hash Sha256" Hash="D16A59CD7C52D1D32BB43670CDCA739AADB19BA15996BAC62071845E1BFBDB95"/>
     <Deny ID="ID_DENY_WFSHBR_3" FriendlyName="HyperTech wfshbr64\89698cad598a56f9e45efffd15d1841e494a2409cc12279150a03842cd6bb7f3 Hash Page Sha1" Hash="59621ADDE6C6353397F1D7E5C1F8A887AC9931E6"/>
@@ -1676,6 +1718,7 @@
     <FileAttrib ID="ID_FILEATTRIB_IQVW64" FriendlyName="IQVW64.sys FileAttribute" FileName="iQVW64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.4.0.21" />
     <FileAttrib ID="ID_FILEATTRIB_ITLSFFN" FriendlyName="ITM s4killer ItlsFFN\01714295a16acc253e50be2c068974ac621b9635a9c328b4dc578cecb03b06f9 FileAttribute" FileName="ItlsFFN.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_KEVP64" FriendlyName="kevp64.sys FileAttribute" FileName="kEvP64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_KSAPI" FriendlyName="KingSoft ksapi.sys FileAttribute" FileName="ksapi.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2020.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_LDIAGO_1" FriendlyName="Lenovo ldiagio.sys\68ca1b5151181a98cd6da55d6dfd6ef0c94f0cf9379be37a8f86dd996d677946 FileAttribute" FileName="LDiagIO_legacy.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_LDIAGO_2" FriendlyName="Lenovo ldiagio.sys\ef55a5a3be73d5bfc5aa2a2b3f0cc574b824d96a129a67931a1667e770d5d938 FileAttribute" FileName="LDiagIO_uefi.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_LDIAGO_3" FriendlyName="Lenovo ldiagio.sys\05f7419335418b1eb5c983860a8a68e73147508b31e7cb1341a9dbeeb81f96b4 FileAttribute" FileName="LDiagIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
@@ -1743,6 +1786,7 @@
     <FileAttrib ID="ID_FILEATTRIB_WINRING0" FriendlyName="WinRing0.sys" FileName="WinRing0.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_WIRWADRV" FriendlyName="Winstron wirwadrv\d8fc8e3a1348393c5d7c3a84bcbae383d85a4721a751ad7afac5428e5e579b4e FileAttribute" FileName="WiRwaDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_WISEUNLO" FriendlyName="WiseUnlo FileAttribute" FileName="WiseUnlo.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_WNBIOS" FriendlyName="wnbios.sys\530d9223ec7e4123532a403abef96dfd1af5291eb49497392ff5d14d18fccfbb  FileAttribute" FileName="wnbios.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.2.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_ZAM_1" FriendlyName="Zemana ZAM\a3908b3fa59c0fc7600ff8887a87861a4f8566ca0a3bdcf2371bb9f36745db91 FileAttribute" FileName="ZAM.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_ZAM_2" FriendlyName="Zemana Zam\036c1151a30a9c25afc961d7305c58cbf8f68e5e5c1e726565c9a8168c2f3cdb FileAttribute" ProductName="AntiLogger Free" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_ZAM_3" FriendlyName="Zemana Zam\0aa79d4c5c3baca0aee095bdbdfddfe70fad495c791066c416bd732eaec2d965 FileAttribute" ProductName="ZAM" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
@@ -1769,6 +1813,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_IOMEM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_KEVP64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_KSAPI" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LHA" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MONITOR" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MTCBSV64" />
@@ -1788,6 +1833,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_SYSDETECTOR_5" />
       <FileAttribRef RuleID="ID_FILEATTRIB_SYSDETECTOR_6" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VDBSV" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_WNBIOS" />
     </Signer>
     <Signer ID="ID_SIGNER_VERISIGN_2010_2" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4678C6E4A8787A8E6ED2BCE8792B122F6C08AFD8" />
@@ -1940,6 +1986,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_HWINFO_2" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IOBITUNLOCKER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ITLSFFN" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_KSAPI" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LHA" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LIBNICM_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MYDRIVERS" />
@@ -1957,6 +2004,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_VIRAGT64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VMDRV" />
       <FileAttribRef RuleID="ID_FILEATTRIB_WISEUNLO" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_WNBIOS" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZAM_1" />
     </Signer>
    <Signer ID="ID_SIGNER_WINDOWS_3RD_PARTY_2010" Name="Microsoft Third Party Component Windows PCA 2010">
@@ -2657,6 +2705,30 @@
       <CertRoot Type="TBS" Value="BD1765C56594221373893EF26D97F88C144FB0E5A0111215B45D7239C3444DF7"/>
       <CertPublisher Value="INZENT Co., Ltd."/>
     </Signer>
+    <Signer ID="ID_SIGNER_KSAPI_1" Name="DigiCert Assured ID Code Signing CA-1">
+      <CertRoot Type="TBS" Value="47F4B9898631773231B32844EC0D49990AC4EB1E"/>
+      <CertPublisher Value="Beijing Kingsoft Security software Co.,Ltd"/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_KSAPI"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_KSAPI_2" Name="GlobalSign Extended Validation CodeSigning CA - SHA256 - G3 Kingsoft">
+      <CertRoot Type="TBS" Value="15E7050789DF807F3E3174294A01B637A1239F603E42F4B5DB9398EFA9DA9996"/>
+      <CertPublisher Value="北京金山安全软件有限公司"/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_KSAPI"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_KSAPI_3" Name="GlobalSign GCC R45 EV CodeSigning CA 2020 - G3 Kingsoft">
+      <CertRoot Type="TBS" Value="D9C7DB0B704F07089440C56E69A0F31D730EDF77CFBF7514630E8B5390A270FE"/>
+      <CertPublisher Value="北京金山安全软件有限公司"/>
+      <FileAttribRef RuleID="ID_FILEATTRIB_KSAPI"/>
+    </Signer>
+    <Signer ID="ID_SIGNER_KSAPI_4" Name="GlobalSign CodeSigning CA - G3">
+      <CertRoot Type="TBS" Value="F478F0E790D5C8EC6056A3AB2567404A991D2837" />
+      <CertPublisher Value="珠海市君天电子科技有限公司" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_KSAPI" />
+    </Signer>
+    <Signer ID="ID_SIGNER_AMON" Name="Microsoft Windows Third Party Component CA 2014">
+      <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE"/>
+      <CertOemID Value="AMON SOFTWARE LTD"/>
+    </Signer>
     <Signer ID="ID_SIGNER_BAOJI" Name="VeriSign Class 3 Code Signing 2010 CA - Baoji zhihengtaiye co.,ltd">
       <CertRoot Type="TBS" Value="ED37AD43BC52426943019F77F35ED1A6B063B5B7" />
     </Signer>
@@ -2753,6 +2825,7 @@
           <DeniedSigner SignerId="ID_SIGNER_ALSYSIO_1" />
           <DeniedSigner SignerId="ID_SIGNER_ALSYSIO_2" />
           <DeniedSigner SignerId="ID_SIGNER_AMDPP" />
+          <DeniedSigner SignerId="ID_SIGNER_AMON" />
           <DeniedSigner SignerId="ID_SIGNER_APPID" />
           <DeniedSigner SignerId="ID_SIGNER_ATILLK" />
           <DeniedSigner SignerId="ID_SIGNER_ARTIFICIAL_1" />
@@ -2834,6 +2907,10 @@
           <DeniedSigner SignerId="ID_SIGNER_JCOS_1" />
           <DeniedSigner SignerId="ID_SIGNER_JCOS_2" />
           <DeniedSigner SignerId="ID_SIGNER_JEROMIN_CODY_ERIC" />
+          <DeniedSigner SignerId="ID_SIGNER_KSAPI_1" />
+          <DeniedSigner SignerId="ID_SIGNER_KSAPI_2" />
+          <DeniedSigner SignerId="ID_SIGNER_KSAPI_3" />
+          <DeniedSigner SignerId="ID_SIGNER_KSAPI_4" />
           <DeniedSigner SignerId="ID_SIGNER_LDIAGIO_1" />
           <DeniedSigner SignerId="ID_SIGNER_LDIAGIO_2" />
           <DeniedSigner SignerId="ID_SIGNER_LDIAGIO_3" />
@@ -3144,6 +3221,26 @@
           <FileRuleRef RuleID="ID_DENY_ASIO_4"/>
           <FileRuleRef RuleID="ID_DENY_ASIO_5"/>
           <FileRuleRef RuleID="ID_DENY_ASIO_6"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO3_1" />
+          <FileRuleRef RuleID="ID_DENY_ASIO3_2" />
+          <FileRuleRef RuleID="ID_DENY_ASIO3_3" />
+          <FileRuleRef RuleID="ID_DENY_ASIO3_4" />
+          <FileRuleRef RuleID="ID_DENY_ASIO3_5" />
+          <FileRuleRef RuleID="ID_DENY_ASIO3_6" />
+          <FileRuleRef RuleID="ID_DENY_ASIO3_7" />
+          <FileRuleRef RuleID="ID_DENY_ASIO3_8" />
+          <FileRuleRef RuleID="ID_DENY_ASIO3_9" />
+          <FileRuleRef RuleID="ID_DENY_ASIO3_10"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO3_11"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO3_12"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO3_13"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO3_14"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO3_15"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO3_16"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO3_17"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO3_18"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO3_19"/>
+          <FileRuleRef RuleID="ID_DENY_ASIO3_20"/>
           <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA1" />
           <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA256" />
           <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA1_PAGE" />
@@ -4335,7 +4432,29 @@
           <FileRuleRef RuleID="ID_DENY_TDEIO_5"/>
           <FileRuleRef RuleID="ID_DENY_TDEIO_6"/>
           <FileRuleRef RuleID="ID_DENY_TDEIO_7"/>
-          <FileRuleRef RuleID="ID_DENY_TDEIO_8"/>  
+          <FileRuleRef RuleID="ID_DENY_TDEIO_8"/>
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_1" />
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_2" />
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_3" />
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_4" />
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_5" />
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_6" />
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_7" />
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_8" />
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_9" />
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_10"/>
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_11"/>
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_12"/>
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_13"/>
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_14"/>
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_15"/>
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_16"/>
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_17"/>
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_18"/>
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_19"/>
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_20"/>
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_21"/>
+          <FileRuleRef RuleID="ID_DENY_TDKLIB_22"/>
           <FileRuleRef RuleID="ID_DENY_WFSHBR_1" />
           <FileRuleRef RuleID="ID_DENY_WFSHBR_2" />
           <FileRuleRef RuleID="ID_DENY_WFSHBR_3" />
@@ -4492,7 +4611,7 @@
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.27695.0</String>
+        <String>10.0.27720.0</String>
       </Value>
     </Setting>
     <Setting Provider="PolicyInfo" Key="NoRevalidationUponRefresh" ValueName="NoRevalidationUponRefreshValue">
