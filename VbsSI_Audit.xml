@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>1.0.0.0</VersionEx>
+  <VersionEx>1.0.0.5</VersionEx>
   <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
@@ -27,13 +27,17 @@
   <!--File Rules-->
   <FileRules>
     <Allow ID="ID_ALLOW_ALL" FriendlyName="Allow all" FileName="*" />
-   <!-- Windows 11 24H2 Kernel mode (Scenario 131) <FileRules> entries -->
+
+    <!-- WIP Kernel mode (Scenario 131) <FileRules> entries -->
+    <FileAttrib ID="ID_FILEATTRIB_RS_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.27749.0" />
+
+    <!-- Windows 11 24H2 Kernel mode (Scenario 131) <FileRules> entries -->
     <FileAttrib ID="ID_FILEATTRIB_GE_CNG_SYS" FileName="cng.sys" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
     <FileAttrib ID="ID_FILEATTRIB_GE_HVAA64_EXE" FileName="hvaa64.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
     <FileAttrib ID="ID_FILEATTRIB_GE_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
     <FileAttrib ID="ID_FILEATTRIB_GE_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
     <FileAttrib ID="ID_FILEATTRIB_GE_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
-    <FileAttrib ID="ID_FILEATTRIB_GE_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
+    <FileAttrib ID="ID_FILEATTRIB_GE_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.2033" />
     <FileAttrib ID="ID_FILEATTRIB_GE_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
     <FileAttrib ID="ID_FILEATTRIB_GE_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
     <FileAttrib ID="ID_FILEATTRIB_GE_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.25400.0" MaximumFileVersion="10.0.26100.0" />
@@ -110,7 +114,7 @@
     <FileAttrib ID="ID_FILEATTRIB_ZN_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
     <FileAttrib ID="ID_FILEATTRIB_ZN_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
     <FileAttrib ID="ID_FILEATTRIB_ZN_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
-    <FileAttrib ID="ID_FILEATTRIB_ZN_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.762" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.1189" />
     <FileAttrib ID="ID_FILEATTRIB_ZN_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
     <FileAttrib ID="ID_FILEATTRIB_ZN_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
     <FileAttrib ID="ID_FILEATTRIB_ZN_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
@@ -147,6 +151,7 @@
     <FileAttrib ID="ID_FILEATTRIB_ZN_RPCRT4_DLL" FileName="rpcrt4.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
     <FileAttrib ID="ID_FILEATTRIB_ZN_SBRESOURCES_DLL" FileName="sbresources.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
     <FileAttrib ID="ID_FILEATTRIB_ZN_SECHOST_DLL" FileName="sechost.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.762" />
+    <FileAttrib ID="ID_FILEATTRIB_ZN_SFAPE_DLL" FileName="SFAPE.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
     <FileAttrib ID="ID_FILEATTRIB_ZN_TBS_DLL" FileName="TBS.DLL" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.0" />
     <FileAttrib ID="ID_FILEATTRIB_ZN_TPMENGUM_DLL" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
     <FileAttrib ID="ID_FILEATTRIB_ZN_TPMENGUM138_DLL" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.25398.829" />
@@ -165,7 +170,7 @@
     <FileAttrib ID="ID_FILEATTRIB_NI_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
     <FileAttrib ID="ID_FILEATTRIB_NI_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
     <FileAttrib ID="ID_FILEATTRIB_NI_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
-    <FileAttrib ID="ID_FILEATTRIB_NI_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3373" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.4317" />
     <FileAttrib ID="ID_FILEATTRIB_NI_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
     <FileAttrib ID="ID_FILEATTRIB_NI_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
     <FileAttrib ID="ID_FILEATTRIB_NI_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
@@ -186,7 +191,7 @@
     <FileAttrib ID="ID_FILEATTRIB_NI_SDFUSBXHCI_EXE" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
     <FileAttrib ID="ID_FILEATTRIB_NI_WUDFCOMPANIONHOST_EXE" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
     <FileAttrib ID="ID_FILEATTRIB_NI_SGRMENCLAVE_DLL" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3443" />
-    <FileAttrib ID="ID_FILEATTRIB_NI_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3373" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
     <FileAttrib ID="ID_FILEATTRIB_NI_VERTDLL_DLL" FileName="vertdll.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3373" />
     <FileAttrib ID="ID_FILEATTRIB_NI_BCRYPT_DLL" FileName="bcrypt.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
     <FileAttrib ID="ID_FILEATTRIB_NI_BCRYPTPRIMITIVES_DLL" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3373" />
@@ -203,6 +208,7 @@
     <FileAttrib ID="ID_FILEATTRIB_NI_RPCRT4_DLL" FileName="rpcrt4.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
     <FileAttrib ID="ID_FILEATTRIB_NI_SBRESOURCES_DLL" FileName="sbresources.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.1" />
     <FileAttrib ID="ID_FILEATTRIB_NI_SECHOST_DLL" FileName="sechost.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3295" />
+    <FileAttrib ID="ID_FILEATTRIB_NI_SFAPE_DLL" FileName="SFAPE.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.0" />
     <FileAttrib ID="ID_FILEATTRIB_NI_TBS_DLL" FileName="TBS.DLL" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.2505" />
     <FileAttrib ID="ID_FILEATTRIB_NI_TPMENGUM_DLL" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
     <FileAttrib ID="ID_FILEATTRIB_NI_TPMENGUM138_DLL" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.22001.0" MaximumFileVersion="10.0.22621.3446" />
@@ -233,7 +239,7 @@
     <FileAttrib ID="ID_FILEATTRIB_CO_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
     <FileAttrib ID="ID_FILEATTRIB_CO_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
     <FileAttrib ID="ID_FILEATTRIB_CO_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
-    <FileAttrib ID="ID_FILEATTRIB_CO_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
+    <FileAttrib ID="ID_FILEATTRIB_CO_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.3260" />
     <FileAttrib ID="ID_FILEATTRIB_CO_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
     <FileAttrib ID="ID_FILEATTRIB_CO_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
     <FileAttrib ID="ID_FILEATTRIB_CO_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22000.2898" />
@@ -288,7 +294,7 @@
     <FileAttrib ID="ID_FILEATTRIB_FE_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
     <FileAttrib ID="ID_FILEATTRIB_FE_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
     <FileAttrib ID="ID_FILEATTRIB_FE_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
-    <FileAttrib ID="ID_FILEATTRIB_FE_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
+    <FileAttrib ID="ID_FILEATTRIB_FE_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2760" />
     <FileAttrib ID="ID_FILEATTRIB_FE_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2399" />
     <FileAttrib ID="ID_FILEATTRIB_FE_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2401" />
     <FileAttrib ID="ID_FILEATTRIB_FE_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.2401" />
@@ -341,7 +347,7 @@
     <FileAttrib ID="ID_FILEATTRIB_VB_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
     <FileAttrib ID="ID_FILEATTRIB_VB_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
     <FileAttrib ID="ID_FILEATTRIB_VB_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
-    <FileAttrib ID="ID_FILEATTRIB_VB_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3995" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.5007" />
     <FileAttrib ID="ID_FILEATTRIB_VB_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
     <FileAttrib ID="ID_FILEATTRIB_VB_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
     <FileAttrib ID="ID_FILEATTRIB_VB_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
@@ -362,7 +368,7 @@
     <FileAttrib ID="ID_FILEATTRIB_VB_SDFUSBXHCI_EXE" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3995" />
     <FileAttrib ID="ID_FILEATTRIB_VB_WUDFCOMPANIONHOST_EXE" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3757" />
     <FileAttrib ID="ID_FILEATTRIB_VB_SGRMENCLAVE_DLL" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.4290" />
-    <FileAttrib ID="ID_FILEATTRIB_VB_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
+    <FileAttrib ID="ID_FILEATTRIB_VB_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.0" />
     <FileAttrib ID="ID_FILEATTRIB_VB_VERTDLL_DLL" FileName="vertdll.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
     <FileAttrib ID="ID_FILEATTRIB_VB_BCRYPT_DLL" FileName="bcrypt.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
     <FileAttrib ID="ID_FILEATTRIB_VB_BCRYPTPRIMITIVES_DLL" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
@@ -388,7 +394,6 @@
     <FileAttrib ID="ID_FILEATTRIB_VB_WOW64LG2_DLL" FileName="wow64lg2.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3995" />
     <FileAttrib ID="ID_FILEATTRIB_VB_WS2_32_DLL" FileName="ws2_32.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
     <FileAttrib ID="ID_FILEATTRIB_VB_MSVCRT_DLL" FileName="msvcrt.dll" MinimumFileVersion="7.0.18000.0" MaximumFileVersion="7.0.19041.0" />
-    <FileAttrib ID="ID_FILEATTRIB_VB_VPNSOHDESKTOP_DLL" FileName="VpnSohDesktop.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
     <FileAttrib ID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTER_DLL" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
     <FileAttrib ID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCES_V4_DLL" FileName="FaceRecognitionEngineAdapterResources_v4.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
     <FileAttrib ID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCESCORE_DLL" FileName="FaceRecognitionEngineAdapterResourcesCore.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.3635" />
@@ -401,7 +406,7 @@
     <FileAttrib ID="ID_FILEATTRIB_RS5_HVAX64_EXE" FileName="hvax64.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_HVLOADER_DLL" FileName="hvloader.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
-    <FileAttrib ID="ID_FILEATTRIB_RS5_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5457" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.6414" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_TCBLAUNCH_EXE" FileName="tcblaunch.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_TCBLOADER_DLL" FileName="tcbloader.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
@@ -414,6 +419,7 @@
     <FileAttrib ID="ID_FILEATTRIB_RS5_IUMDLL_DLL" FileName="iumdll.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.4850" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_IUMSDK_DLL" FileName="IumSdk.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_LSAISO_EXE" FileName="LsaIso.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_NGCISO_EXE" FileName="NgcIso.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.17763.0" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_PSP_EXE" FileName="psp.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_SDFHOST_DLL" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_SECUREUSBVIDEO_EXE" FileName="secureusbvideo.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
@@ -438,7 +444,7 @@
     <FileAttrib ID="ID_FILEATTRIB_RS5_SECHOST_DLL" FileName="sechost.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5575" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_TBS_DLL" FileName="TBS.DLL" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_TPMENGUM_DLL" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.5695" />
-    <FileAttrib ID="ID_FILEATTRIB_RS5_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.1489" FriendlyName="e:\Windows\System32\Ucrtbase.dll" />
+    <FileAttrib ID="ID_FILEATTRIB_RS5_UCRTBASE_DLL" FileName="ucrtbase.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" FriendlyName="e:\Windows\System32\Ucrtbase.dll" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_WIN32U_DLL" FileName="Win32u.DLL" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_WOW64_DLL" FileName="wow64.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.2685" />
     <FileAttrib ID="ID_FILEATTRIB_RS5_WOW64CPU_DLL" FileName="wow64cpu.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.0" />
@@ -452,7 +458,7 @@
     <FileAttrib ID="ID_FILEATTRIB_RS1_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6980" />
     <FileAttrib ID="ID_FILEATTRIB_RS1_HVLOADER_EFI" FileName="hvloader.efi" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6980" />
     <FileAttrib ID="ID_FILEATTRIB_RS1_HVLOADER_EXE" FileName="hvloader.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6980" />
-    <FileAttrib ID="ID_FILEATTRIB_RS1_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6521" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.7426" />
     <FileAttrib ID="ID_FILEATTRIB_RS1_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
     <FileAttrib ID="ID_FILEATTRIB_RS1_OSLOADER_EXE" FileName="osloader.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
 
@@ -461,6 +467,7 @@
     <FileAttrib ID="ID_FILEATTRIB_RS1_IUMBASE_DLL" FileName="iumbase.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.2968" />
     <FileAttrib ID="ID_FILEATTRIB_RS1_IUMCRYPT_DLL" FileName="iumcrypt.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
     <FileAttrib ID="ID_FILEATTRIB_RS1_IUMDLL_DLL" FileName="iumdll.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.2968" />
+    <FileAttrib ID="ID_FILEATTRIB_RS1_IUMSDK_DLL" FileName="IumSdk.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14392.65535" />
     <FileAttrib ID="ID_FILEATTRIB_RS1_LSAISO_EXE" FileName="LsaIso.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
     <FileAttrib ID="ID_FILEATTRIB_RS1_PSP_EXE" FileName="psp.exe" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6896" />
     <FileAttrib ID="ID_FILEATTRIB_RS1_BCRYPT_DLL" FileName="bcrypt.dll" MinimumFileVersion="10.0.10300.0" MaximumFileVersion="10.0.14393.6077" />
@@ -495,7 +502,7 @@
     <FileAttrib ID="ID_FILEATTRIB_TH1_HVIX64_EXE" FileName="hvix64.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
     <FileAttrib ID="ID_FILEATTRIB_TH1_HVLOADER_EFI" FileName="hvloader.efi" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
     <FileAttrib ID="ID_FILEATTRIB_TH1_HVLOADER_EXE" FileName="hvloader.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
-    <FileAttrib ID="ID_FILEATTRIB_TH1_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.18695" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_SECUREKERNEL_EXE" FileName="securekernel.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20793" />
     <FileAttrib ID="ID_FILEATTRIB_TH1_SKCI_DLL" FileName="skci.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
     <FileAttrib ID="ID_FILEATTRIB_TH1_OSLOADER_EXE" FileName="osloader.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
 
@@ -503,6 +510,7 @@
     <FileAttrib ID="ID_FILEATTRIB_TH1_IUMBASE_DLL" FileName="iumbase.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.17737" />
     <FileAttrib ID="ID_FILEATTRIB_TH1_IUMDLL_DLL" FileName="iumdll.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.17737" />
     <FileAttrib ID="ID_FILEATTRIB_TH1_LSAISO_EXE" FileName="LsaIso.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20592" />
+    <FileAttrib ID="ID_FILEATTRIB_TH1_PSP_EXE" FileName="psp.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.16383" />
     <FileAttrib ID="ID_FILEATTRIB_TH1_BCRYPT_DLL" FileName="bcrypt.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.20047" />
     <FileAttrib ID="ID_FILEATTRIB_TH1_BCRYPTPRIMITIVES_DLL" FileName="bcryptprimitives.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.19264" />
     <FileAttrib ID="ID_FILEATTRIB_TH1_CRYPTBASE_DLL" FileName="cryptbase.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10240.16383" />
@@ -522,11 +530,6 @@
     <FileAttrib ID="ID_FILEATTRIB_TH1_MSVCRT_DLL" FileName="msvcrt.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="7.0.10240.19234" />
   </FileRules>
   <Signers>
-    <Signer ID="ID_SIGNER_WINDOWS" Name="Microsoft Windows Production">
-      <CertRoot Type="Wellknown" Value="06"/>
-      <CertEKU ID="ID_EKU_WINDOWS"/>
-    </Signer>
-
     <!-- Match a specific set of Windows production signed binaries -->
     <Signer ID="ID_SIGNER_IUM_DENIED_WINDOWS_PRODUCTION" Name="IUM Production denied">
       <CertRoot Type="Wellknown" Value="06" />
@@ -627,6 +630,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_ZN_RPCRT4_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SBRESOURCES_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SFAPE_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TBS_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TPMENGUM_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TPMENGUM138_DLL" />
@@ -672,6 +676,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_NI_RPCRT4_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NI_SBRESOURCES_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NI_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SFAPE_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NI_TBS_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NI_TPMENGUM_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NI_TPMENGUM138_DLL" />
@@ -820,7 +825,6 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_VB_WOW64LG2_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VB_WS2_32_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VB_MSVCRT_DLL" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_VB_VPNSOHDESKTOP_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTER_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCES_V4_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCESCORE_DLL" />
@@ -834,6 +838,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_RS5_IUMDLL_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS5_IUMSDK_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS5_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_NGCISO_EXE" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS5_PSP_EXE" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SDFHOST_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SECUREUSBVIDEO_EXE" />
@@ -871,6 +876,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMBASE_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMCRYPT_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMSDK_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS1_LSAISO_EXE" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS1_PSP_EXE" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS1_BCRYPT_DLL" />
@@ -903,6 +909,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_TH1_IUMBASE_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TH1_IUMDLL_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TH1_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_PSP_EXE" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TH1_BCRYPT_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TH1_BCRYPTPRIMITIVES_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TH1_CRYPTBASE_DLL" />
@@ -1022,6 +1029,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_ZN_RPCRT4_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SBRESOURCES_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ZN_SFAPE_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TBS_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TPMENGUM_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ZN_TPMENGUM138_DLL" />
@@ -1067,6 +1075,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_NI_RPCRT4_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NI_SBRESOURCES_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NI_SECHOST_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NI_SFAPE_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NI_TBS_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NI_TPMENGUM_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NI_TPMENGUM138_DLL" />
@@ -1215,7 +1224,6 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_VB_WOW64LG2_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VB_WS2_32_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VB_MSVCRT_DLL" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_VB_VPNSOHDESKTOP_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTER_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCES_V4_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VB_FACERECOGNITIONENGINEADAPTERRESOURCESCORE_DLL" />
@@ -1229,6 +1237,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_RS5_IUMDLL_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS5_IUMSDK_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS5_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS5_NGCISO_EXE" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS5_PSP_EXE" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SDFHOST_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS5_SECUREUSBVIDEO_EXE" />
@@ -1266,6 +1275,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMBASE_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMCRYPT_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMDLL_DLL" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS1_IUMSDK_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS1_LSAISO_EXE" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS1_PSP_EXE" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RS1_BCRYPT_DLL" />
@@ -1298,6 +1308,7 @@
       <FileAttribRef RuleID="ID_FILEATTRIB_TH1_IUMBASE_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TH1_IUMDLL_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TH1_LSAISO_EXE" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TH1_PSP_EXE" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TH1_BCRYPT_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TH1_BCRYPTPRIMITIVES_DLL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TH1_CRYPTBASE_DLL" />
@@ -1321,6 +1332,9 @@
     <Signer ID="ID_SIGNER_KERNEL_DENIED_WINDOWS_PRODUCTION" Name="Kernel/Boot Production denied">
       <CertRoot Type="Wellknown" Value="06" />
       <CertEKU ID="ID_EKU_WINDOWS"/>
+
+      <!-- RS Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS_SECUREKERNEL_EXE" />
 
       <!-- Windows 11 24H2 Kernel mode (Scenario 131) <Signer> entries -->
       <FileAttribRef RuleID="ID_FILEATTRIB_GE_CNG_SYS" />
@@ -1434,6 +1448,9 @@
     <Signer ID="ID_SIGNER_KERNEL_DENIED_WINDOWS_FLIGHT" Name="Kernel/Boot Flight denied">
       <CertRoot Type="Wellknown" Value="0E" />
       <CertEKU ID="ID_EKU_WINDOWS"/>
+
+      <!-- RS Kernel mode (Scenario 131) <Signer> entries -->
+      <FileAttribRef RuleID="ID_FILEATTRIB_RS_SECUREKERNEL_EXE" />
 
       <!-- Windows 11 24H2 Kernel mode (Scenario 131) <Signer> entries -->
       <FileAttribRef RuleID="ID_FILEATTRIB_GE_CNG_SYS" />
@@ -1549,6 +1566,7 @@
       <CertEKU ID="ID_EKU_WINDOWS"/>
     </Signer>
   </Signers>
+
   <!--Driver Signing Scenarios-->
   <!-- Allow everything CI would normally allow except those explicitly denied -->
   <SigningScenarios>
@@ -1575,9 +1593,11 @@
       </ProductSigners>
     </SigningScenario>
   </SigningScenarios>
+
   <UpdatePolicySigners />
   <CiSigners />
   <HvciOptions>0</HvciOptions>
+
   <Settings>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
       <Value>
@@ -1586,7 +1606,7 @@
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>1.0.0.0</String>
+        <String>1.0.0.5</String>
       </Value>
     </Setting>
   </Settings>
